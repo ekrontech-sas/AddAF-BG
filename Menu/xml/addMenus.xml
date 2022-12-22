@@ -1,0 +1,16 @@
+﻿<Application>
+  <Menus>
+    <action type="add">
+      <Menu Checked="0" Enabled="1" FatherUID="43520" Image="" String="Addon Rental AF" Type="2" UniqueID="BGT_RENTAL">
+        <Menus>
+          <action type="add">
+            <Menu Checked="0" Enabled="1" FatherUID="BGT_RENTAL" Image="" Position="0" String="Parametrizaciones" Type="1" UniqueID="BGT_Param" />
+            <Menu Checked="0" Enabled="1" FatherUID="BGT_RENTAL" Image="" Position="1" String="Contratos" Type="1" UniqueID="BGT_Contr" />
+            <Menu Checked="0" Enabled="1" FatherUID="BGT_RENTAL" Image="" Position="2" String="Asistente de Entrega" Type="1" UniqueID="BGT_Entr" />
+            <Menu Checked="0" Enabled="1" FatherUID="BGT_RENTAL" Image="" Position="3" String="Asistente de Devolucion" Type="1" UniqueID="BGT_Devol" />
+          </action>
+        </Menus>
+      </Menu>
+    </action>
+  </Menus>
+</Application>

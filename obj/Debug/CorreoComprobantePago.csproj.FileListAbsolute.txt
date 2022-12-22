@@ -1,0 +1,19 @@
+C:\Users\c02vc0vrj1wk\Desktop\Base\bin\Debug\dll\Correo Comprobante Pago.pdb
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo\obj\Debug\CorreoComprobantePago.csprojResolveAssemblyReference.cache
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo\obj\Debug\prodsum.Properties.Resources.resources
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo\obj\Debug\CorreoComprobantePago.csproj.GenerateResource.Cache
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo\obj\Debug\Correo Comprobante Pago.pdb
+C:\Users\c02vc0vrj1wk\Desktop\Base\bin\Debug\dll\Correo Comprobante Pago.dll.config
+C:\Users\c02vc0vrj1wk\Desktop\Base\bin\Debug\dll\Correo Comprobante Pago.dll
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo\obj\Debug\Correo Comprobante Pago.dll
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo\bin\Correo Comprobante Pago.dll.config
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo\bin\Correo Comprobante Pago.dll
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo\bin\Correo Comprobante Pago.pdb
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo\bin\B1Framework.dll
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo\bin\stdole.dll
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo\bin\CrystalDecisions.Shared.dll
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo\bin\log4net.dll
+C:\Program Files (x86)\SAP\SAP Business One Server\B1_SHR\PYS_Resources\dll\Correo Comprobante Pago.dll.config
+C:\Program Files (x86)\SAP\SAP Business One Server\B1_SHR\PYS_Resources\dll\Correo Comprobante Pago.dll
+C:\Program Files (x86)\SAP\SAP Business One Server\B1_SHR\PYS_Resources\dll\Correo Comprobante Pago.pdb

@@ -1,0 +1,29 @@
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\bin\x86\Debug\EnvioCorreo.exe.config
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\bin\x86\Debug\EnvioCorreo.exe
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\bin\x86\Debug\EnvioCorreo.pdb
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\bin\x86\Debug\B1Framework.dll
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\bin\x86\Debug\stdole.dll
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\obj\x86\Debug\EnvioCorreo.csprojResolveAssemblyReference.cache
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\obj\x86\Debug\seidor.Properties.Resources.resources
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\obj\x86\Debug\EnvioCorreo.csproj.GenerateResource.Cache
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\obj\x86\Debug\EnvioCorreo.exe
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\obj\x86\Debug\EnvioCorreo.pdb
+C:\Users\c02vc0vrj1wk\Desktop\BIOTRONITECH\EnvioCorreo\obj\x86\Debug\EnvioCorreo.pdb
+C:\Users\c02vc0vrj1wk\Desktop\BIOTRONITECH\EnvioCorreo\bin\x86\Debug\EnvioCorreo.pdb
+C:\Users\c02vc0vrj1wk\Desktop\BIOTRONITECH\EnvioCorreo\bin\x86\Debug\stdole.dll
+C:\Users\c02vc0vrj1wk\Desktop\BIOTRONITECH\EnvioCorreo\obj\x86\Debug\EnvioCorreo.csprojResolveAssemblyReference.cache
+C:\Users\c02vc0vrj1wk\Desktop\BIOTRONITECH\EnvioCorreo\obj\x86\Debug\seidor.Properties.Resources.resources
+C:\Users\c02vc0vrj1wk\Desktop\BIOTRONITECH\EnvioCorreo\obj\x86\Debug\EnvioCorreo.csproj.GenerateResource.Cache
+C:\Users\c02vc0vrj1wk\Desktop\BIOTRONITECH\EnvioCorreo\bin\x86\Debug\EnvioCorreo.dll.config
+C:\Users\c02vc0vrj1wk\Desktop\BIOTRONITECH\EnvioCorreo\bin\x86\Debug\EnvioCorreo.dll
+C:\Users\c02vc0vrj1wk\Desktop\BIOTRONITECH\EnvioCorreo\obj\x86\Debug\EnvioCorreo.dll
+P:\Biotronitech\Biotronitech Addon\EnvioCorreo\bin\x86\Debug\EnvioCorreo.pdb
+P:\Biotronitech\Biotronitech Addon\EnvioCorreo\bin\x86\Debug\stdole.dll
+P:\Biotronitech\Biotronitech Addon\EnvioCorreo\bin\x86\Debug\B1Framework.pdb
+P:\Biotronitech\Biotronitech Addon\EnvioCorreo\obj\x86\Debug\EnvioCorreo.csprojResolveAssemblyReference.cache
+P:\Biotronitech\Biotronitech Addon\EnvioCorreo\obj\x86\Debug\seidor.Properties.Resources.resources
+P:\Biotronitech\Biotronitech Addon\EnvioCorreo\obj\x86\Debug\EnvioCorreo.csproj.GenerateResource.Cache
+P:\Biotronitech\Biotronitech Addon\EnvioCorreo\obj\x86\Debug\EnvioCorreo.pdb
+P:\Biotronitech\Biotronitech Addon\EnvioCorreo\bin\x86\Debug\EnvioCorreo.dll.config
+P:\Biotronitech\Biotronitech Addon\EnvioCorreo\bin\x86\Debug\EnvioCorreo.dll
+P:\Biotronitech\Biotronitech Addon\EnvioCorreo\obj\x86\Debug\EnvioCorreo.dll

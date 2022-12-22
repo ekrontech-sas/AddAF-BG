@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A525C2E2-8398-48F8-8F9C-1CB828997565}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>bagant</RootNamespace>
+    <AssemblyName>RentalAfAddon</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\Program Files %28x86%29\SAP\SAP Business One Server\B1_SHR\PYS_Resources\dll\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DefineConstants>
+    </DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="B1Framework">
+      <HintPath>bin\x64\Debug\B1Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ThirdParties\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ThirdParties\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Downloads\log4Net\3.5\release\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.IdentityModel.Selectors" />
+    <Reference Include="System.identitymodel.services" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form\0\Button_1.cs" />
+    <Compile Include="Form\0\Form_Load.cs" />
+    <Compile Include="Form\133\Button_1.cs" />
+    <Compile Include="Form\133\Form_Data.cs" />
+    <Compile Include="Form\133\Matrix_Item_38.cs" />
+    <Compile Include="Form\140\Button_1.cs" />
+    <Compile Include="Form\140\Form_Data.cs" />
+    <Compile Include="Form\141\Form_Data.cs" />
+    <Compile Include="Form\143\Form_Data.cs" />
+    <Compile Include="Form\1470000009\Form_Data.cs" />
+    <Compile Include="Form\1470000012\Form_Data.cs" />
+    <Compile Include="Form\1470000013\Form_Data.cs" />
+    <Compile Include="Form\1470000014\Form_Data.cs" />
+    <Compile Include="Form\1470000015\Form_Data.cs" />
+    <Compile Include="Form\1472000038\Form_Data.cs" />
+    <Compile Include="Form\1473000075\Form_Data.cs" />
+    <Compile Include="Form\1473000075\Form_Load.cs" />
+    <Compile Include="Form\1473000075\TAB_Item_0.cs" />
+    <Compile Include="Form\1473000075\TAB_Item_1.cs" />
+    <Compile Include="Form\150\Button_1.cs" />
+    <Compile Include="Form\150\Form_Data.cs" />
+    <Compile Include="Form\150\Form_Load.cs" />
+    <Compile Include="Form\150\TAB_Item_2.cs" />
+    <Compile Include="Form\150\TAB_Item_3.cs" />
+    <Compile Include="Form\179\Form_Data.cs" />
+    <Compile Include="Form\180\Button_1.cs" />
+    <Compile Include="Form\180\Button_btnExceso.cs" />
+    <Compile Include="Form\180\Form_Data.cs" />
+    <Compile Include="Form\181\Form_Data.cs" />
+    <Compile Include="Form\182\Form_Data.cs" />
+    <Compile Include="Form\2002122020\Button_1.cs" />
+    <Compile Include="Form\2002122020\Button_Item_107.cs" />
+    <Compile Include="Form\2002122020\Button_Item_1282.cs" />
+    <Compile Include="Form\2002122020\Button_Item_99.cs" />
+    <Compile Include="Form\2002122020\ComboBox_Item_25.cs" />
+    <Compile Include="Form\2002122020\ComboBox_Item_47.cs" />
+    <Compile Include="Form\2002122020\ComboBox_Item_57.cs" />
+    <Compile Include="Form\2002122020\ComboBox_Item_94.cs" />
+    <Compile Include="Form\2002122020\ComboBox_Item_96.cs" />
+    <Compile Include="Form\2002122020\EditText_Item_108.cs" />
+    <Compile Include="Form\2002122020\EditText_Item_18.cs" />
+    <Compile Include="Form\2002122020\EditText_Item_33.cs" />
+    <Compile Include="Form\2002122020\EditText_Item_39.cs" />
+    <Compile Include="Form\2002122020\EditText_Item_41.cs" />
+    <Compile Include="Form\2002122020\EditText_Item_51.cs" />
+    <Compile Include="Form\2002122020\EditText_Item_53.cs" />
+    <Compile Include="Form\2002122020\EditText_Item_6.cs" />
+    <Compile Include="Form\2002122020\EditText_Item_95.cs" />
+    <Compile Include="Form\2002122020\EditText_Item_97.cs" />
+    <Compile Include="Form\2002122020\Form_Data.cs" />
+    <Compile Include="Form\2002122020\Grid_Item_101.cs" />
+    <Compile Include="Form\2002122020\Grid_Item_111.cs" />
+    <Compile Include="Form\2002122020\Grid_Item_15.cs" />
+    <Compile Include="Form\2002122020\Grid_Item_5.cs" />
+    <Compile Include="Form\2002122020\Grid_Item_9.cs" />
+    <Compile Include="Form\2002122020\Matrix_Item_62.cs" />
+    <Compile Include="Form\2002122020\Tab_Item_100.cs" />
+    <Compile Include="Form\2002122020\Tab_Item_11.cs" />
+    <Compile Include="Form\2002122020\Tab_Item_12.cs" />
+    <Compile Include="Form\2002122020\Tab_Item_7.cs" />
+    <Compile Include="Form\2002122020\Tab_Item_10.cs" />
+    <Compile Include="Form\2002122020\Tab_Item_2.cs" />
+    <Compile Include="Form\2003112020\Button_Item_10.cs" />
+    <Compile Include="Form\2003112020\Button_Item_32.cs" />
+    <Compile Include="Form\2003112020\Matrix_Item_49.cs" />
+    <Compile Include="Form\2003112020\Matrix_Item_55.cs" />
+    <Compile Include="Form\2004012021\Button_Item_2.cs" />
+    <Compile Include="Form\2004012021\Button_Item_31.cs" />
+    <Compile Include="Form\2004012021\Button_Item_32.cs" />
+    <Compile Include="Form\2004012021\Button_Item_33.cs" />
+    <Compile Include="Form\2004012021\Button_Item_34.cs" />
+    <Compile Include="Form\2004012021\EditText_Item_11.cs" />
+    <Compile Include="Form\2004012021\EditText_Item_12.cs" />
+    <Compile Include="Form\2004012021\EditText_Item_13.cs" />
+    <Compile Include="Form\2004012021\EditText_Item_14.cs" />
+    <Compile Include="Form\2004012021\EditText_Item_16.cs" />
+    <Compile Include="Form\2004012021\EditText_Item_17.cs" />
+    <Compile Include="Form\2004012021\EditText_Item_18.cs" />
+    <Compile Include="Form\2004012021\EditText_Item_19.cs" />
+    <Compile Include="Form\2004012021\EditText_Item_20.cs" />
+    <Compile Include="Form\2004012021\EditText_Item_21.cs" />
+    <Compile Include="Form\2004012021\EditText_Item_22.cs" />
+    <Compile Include="Form\2004012021\EditText_Item_25.cs" />
+    <Compile Include="Form\2004012021\EditText_Item_26.cs" />
+    <Compile Include="Form\2004012021\EditText_Item_35.cs" />
+    <Compile Include="Form\2004012021\Form_Data.cs" />
+    <Compile Include="Form\2004012021\Grid_Item_30.cs" />
+    <Compile Include="Form\2004012021\Grid_Item_5.cs" />
+    <Compile Include="Form\2010012021\Button_Item_2.cs" />
+    <Compile Include="Form\2010012021\Button_Item_31.cs" />
+    <Compile Include="Form\2010012021\Button_Item_32.cs" />
+    <Compile Include="Form\2010012021\Button_Item_33.cs" />
+    <Compile Include="Form\2010012021\Button_Item_34.cs" />
+    <Compile Include="Form\2010012021\EditText_Item_11.cs" />
+    <Compile Include="Form\2010012021\EditText_Item_12.cs" />
+    <Compile Include="Form\2010012021\EditText_Item_13.cs" />
+    <Compile Include="Form\2010012021\EditText_Item_14.cs" />
+    <Compile Include="Form\2010012021\EditText_Item_19.cs" />
+    <Compile Include="Form\2010012021\EditText_Item_20.cs" />
+    <Compile Include="Form\2010012021\EditText_Item_21.cs" />
+    <Compile Include="Form\2010012021\EditText_Item_22.cs" />
+    <Compile Include="Form\2010012021\EditText_Item_25.cs" />
+    <Compile Include="Form\2010012021\EditText_Item_26.cs" />
+    <Compile Include="Form\2010012021\Grid_Item_16.cs" />
+    <Compile Include="Form\2010012021\Grid_Item_30.cs" />
+    <Compile Include="Form\2010012021\Grid_Item_35.cs" />
+    <Compile Include="Form\2010012021\Grid_Item_5.cs" />
+    <Compile Include="Form\2010012021\linkCont_LinkedButton.cs" />
+    <Compile Include="Form\2010012021\Matrix_Item_15.cs" />
+    <Compile Include="Form\2010012021\Matrix_Item_42.cs" />
+    <Compile Include="Form\2010012021\Matrix_Item_6.cs" />
+    <Compile Include="Form\3001\Form_Data.cs" />
+    <Compile Include="Form\3002\Button_1.cs" />
+    <Compile Include="Form\3002\Button_1283.cs" />
+    <Compile Include="Form\3002\Form_Data.cs" />
+    <Compile Include="Form\3002\Grid_Item_3.cs" />
+    <Compile Include="Form\65306\Form_Data.cs" />
+    <Compile Include="Form\720\Form_Data.cs" />
+    <Compile Include="Form\721\Form_Data.cs" />
+    <Compile Include="Form\940\Form_Data.cs" />
+    <Compile Include="Form\Form_RightClick.cs" />
+    <Compile Include="Form\Garantias\Form_Data.cs" />
+    <EmbeddedResource Include="Hana\GetEntregaPreliminarNoGuiaRemove.sql" />
+    <Compile Include="Init.cs" />
+    <Compile Include="Menu\Menu_1281.cs" />
+    <Compile Include="Menu\Menu_1282.cs" />
+    <Compile Include="Menu\Menu_AddRow.cs" />
+    <Compile Include="Menu\Menu_AddRowC.cs" />
+    <Compile Include="Menu\Menu_AddRowDa.cs" />
+    <Compile Include="Menu\Menu_BGT_Contr.cs" />
+    <Compile Include="Menu\Menu_BGT_Devol.cs" />
+    <Compile Include="Menu\Menu_BGT_Entr.cs" />
+    <Compile Include="Menu\Menu_BGT_Param.cs" />
+    <Compile Include="Menu\Menu_CancelDoc.cs" />
+    <Compile Include="Menu\Menu_CllpseRow.cs" />
+    <Compile Include="Menu\Menu_ExpandRow.cs" />
+    <Compile Include="Menu\Menu_RemRow.cs" />
+    <Compile Include="Menu\Menu_RemRowC.cs" />
+    <Compile Include="Params\Parameters.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CommonTaskSapUI.cs" />
+    <Compile Include="Services\FileDialog.cs" />
+    <Compile Include="Services\GetFileNameClass.cs" />
+    <Compile Include="Services\Log.cs" />
+    <Compile Include="Services\MatrixServices.cs" />
+    <Compile Include="Services\SAPServices.cs" />
+    <Compile Include="Services\UDOServices.cs" />
+    <Compile Include="Services\UDT_Table.cs" />
+    <Compile Include="Services\UtilServices.cs" />
+    <Compile Include="Services\WindowWrapper.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Hana\CheckDataReturnFromDelivery.sql" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reports\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Menu\xml\addMenus.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\2003112020\srf\FRM_PARAMS_0.srf" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetSeriesItems.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\1473000075\xml\UpdateAsset.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\150\xml\UpdateItem.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetSeriesItemsToAsset.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetClassAF.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetSeriesItemsToCreate.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetDataTransacc.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetMovementItem.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\2003112020\srf\FRM_PARAMS.srf" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetWareHouse.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetMovementAssetItem.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetDataAssetTransacc.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetGLMethod.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetFixedFromDocument.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\2002122020\srf\form_contrato.srf" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetSalesEmployees.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetPriceList.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetComisiones.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetTerritories.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetCategory.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetSeriesNumberContract.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetNextDocumentNumber.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetContactPerson.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetAddresFE.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetAddresShip.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetTerritory.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetBranches.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetValuesOF.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetOpportunities.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetContractResume.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\NoDataFound.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetResumeObra.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\CheckIfHasMovement.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetDocEntryContract.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetCantEntregado.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetProjectSN.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetBPHolding.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetDataGarantia.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetDetailsTable.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetCantDevolucion.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetMovement.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetEdoCuenta.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\2004012021\srf\FRM_ENTR.srf" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetDeliveryDocuments.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetItemsDistanceObra.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\2010012021\srf\FRM_DEVOL.srf" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetReturnsDocuments.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetReturnsHeaderDocuments.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\NoDataFoundMatrix.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetResumeReturn.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetTransportList.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetTranspList.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\180\xml\Update.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetSeries.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetSerieFromContract.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetContractDataDevo.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetDataMovementInvoice.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetObraSelect.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetPriceContract.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetSerieReturnDevoEx.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetBranchUser.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetDateInvoice.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\CheckInvoiceRestrain.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetDataToInvoiceCalc.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetBPProject.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetPriceListSelectedUser.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetGarantiaHeader.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetPermUsers.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetMovementByItem.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Hana\GetGarantiaValue.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SAPbobsCOM">
+      <Guid>{FC8030BE-F5D2-4B8E-8F92-44228FE30090}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="SAPbouiCOM">
+      <Guid>{6048236A-956D-498D-A6F1-9C81C13AB6E8}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="Form\EntregaMercancia\EntregaMercancia.srf" />
+    <EmbeddedResource Include="Hana\GetCantEntregadoPreRemove.sql" />
+    <EmbeddedResource Include="Hana\GetEntregaPreliminarNoGuia.sql" />
+    <EmbeddedResource Include="Hana\GetCantEntregadoPre.sql" />
+    <EmbeddedResource Include="Hana\GetContractData.sql" />
+    <EmbeddedResource Include="Hana\GetUserProp.sql" />
+    <EmbeddedResource Include="Hana\GetMovmentByItemDelRow.sql" />
+    <EmbeddedResource Include="Hana\GetUserData.sql" />
+    <EmbeddedResource Include="Hana\GetDataContractAll.sql" />
+    <EmbeddedResource Include="Hana\GetCantGarantias.sql" />
+    <EmbeddedResource Include="Hana\GetOwnerAndSlp.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,48 @@
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo_64\bin\x64\Debug\Correo Comprobante Pago.dll.config
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo_64\bin\x64\Debug\Correo Comprobante Pago.dll
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo_64\bin\x64\Debug\Correo Comprobante Pago.pdb
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo_64\bin\x64\Debug\B1Framework.dll
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo_64\bin\x64\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo_64\bin\x64\Debug\CrystalDecisions.Shared.dll
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo_64\bin\x64\Debug\log4net.dll
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo_64\bin\x64\Debug\stdole.dll
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo_64\obj\x64\Debug\CorreoComprobantePago.csprojResolveAssemblyReference.cache
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo_64\obj\x64\Debug\Interop.SAPbobsCOM.dll
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo_64\obj\x64\Debug\Interop.SAPbouiCOM.dll
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo_64\obj\x64\Debug\CorreoComprobantePago.csproj.ResolveComReference.cache
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo_64\obj\x64\Debug\prodsum.Properties.Resources.resources
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo_64\obj\x64\Debug\CorreoComprobantePago.csproj.GenerateResource.Cache
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo_64\obj\x64\Debug\Correo Comprobante Pago.dll
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo_64\obj\x64\Debug\Correo Comprobante Pago.pdb
+T:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64\bin\x64\Debug\Correo Comprobante Pago.dll.config
+T:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64\bin\x64\Debug\Correo Comprobante Pago.dll
+T:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64\bin\x64\Debug\Correo Comprobante Pago.pdb
+T:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64\bin\x64\Debug\CrystalDecisions.CrystalReports.Engine.dll
+T:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64\bin\x64\Debug\CrystalDecisions.Shared.dll
+T:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64\bin\x64\Debug\log4net.dll
+T:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64\bin\x64\Debug\stdole.dll
+T:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64\obj\x64\Debug\CorreoComprobantePago.csprojResolveAssemblyReference.cache
+T:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64\obj\x64\Debug\Interop.SAPbobsCOM.dll
+T:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64\obj\x64\Debug\Interop.SAPbouiCOM.dll
+T:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64\obj\x64\Debug\CorreoComprobantePago.csproj.ResolveComReference.cache
+T:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64\obj\x64\Debug\prodsum.Properties.Resources.resources
+T:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64\obj\x64\Debug\CorreoComprobantePago.csproj.GenerateResource.Cache
+T:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64\obj\x64\Debug\Correo Comprobante Pago.dll
+T:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64\obj\x64\Debug\Correo Comprobante Pago.pdb
+J:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64_06-10-2018\bin\x64\Debug\Correo Comprobante Pago.pdb
+J:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64_06-10-2018\bin\x64\Debug\CrystalDecisions.CrystalReports.Engine.dll
+J:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64_06-10-2018\bin\x64\Debug\CrystalDecisions.Shared.dll
+J:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64_06-10-2018\bin\x64\Debug\log4net.dll
+J:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64_06-10-2018\bin\x64\Debug\stdole.dll
+J:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64_06-10-2018\obj\x64\Debug\CorreoComprobantePago.csprojAssemblyReference.cache
+J:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64_06-10-2018\obj\x64\Debug\Interop.SAPbobsCOM.dll
+J:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64_06-10-2018\obj\x64\Debug\Interop.SAPbouiCOM.dll
+J:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64_06-10-2018\obj\x64\Debug\CorreoComprobantePago.csproj.ResolveComReference.cache
+J:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64_06-10-2018\obj\x64\Debug\prodsum.Properties.Resources.resources
+J:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64_06-10-2018\obj\x64\Debug\CorreoComprobantePago.csproj.GenerateResource.cache
+J:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64_06-10-2018\obj\x64\Debug\CorreoComprobantePago.csproj.CoreCompileInputs.cache
+J:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64_06-10-2018\obj\x64\Debug\CorreoComprobantePago.csproj.CopyComplete
+J:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64_06-10-2018\obj\x64\Debug\Correo Comprobante Pago.pdb
+J:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64_06-10-2018\bin\x64\Debug\Correo Comprobante Pago.dll.config
+J:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64_06-10-2018\bin\x64\Debug\Correo Comprobante Pago.dll
+J:\Productos y Suministros\Addon\EnvioCorreo\64\EnvioCorreo_64_06-10-2018\obj\x64\Debug\Correo Comprobante Pago.dll

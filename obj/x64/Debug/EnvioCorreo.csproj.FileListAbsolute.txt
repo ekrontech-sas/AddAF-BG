@@ -1,0 +1,11 @@
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\bin\x64\Debug\EnvioCorreo.exe.config
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\bin\x64\Debug\EnvioCorreo.exe
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\bin\x64\Debug\EnvioCorreo.pdb
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\bin\x64\Debug\B1Framework.dll
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\bin\x64\Debug\BarcodeLib.Barcode.WinForms.dll
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\bin\x64\Debug\stdole.dll
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\obj\x64\Debug\EnvioCorreo.csprojResolveAssemblyReference.cache
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\obj\x64\Debug\seidor.Properties.Resources.resources
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\obj\x64\Debug\EnvioCorreo.csproj.GenerateResource.Cache
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\obj\x64\Debug\EnvioCorreo.exe
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\obj\x64\Debug\EnvioCorreo.pdb

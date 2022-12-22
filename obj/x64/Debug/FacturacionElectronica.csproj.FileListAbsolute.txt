@@ -1,0 +1,90 @@
+T:\Productos y Suministros\Addin\FacturacionElectronica\64\FacturacionElectronica\bin\x64\Debug\FacturacionElectronica.exe.config
+T:\Productos y Suministros\Addin\FacturacionElectronica\64\FacturacionElectronica\obj\x64\Debug\Interop.SAPbobsCOM.dll
+T:\Productos y Suministros\Addin\FacturacionElectronica\64\FacturacionElectronica\obj\x64\Debug\Interop.SAPbouiCOM.dll
+T:\Productos y Suministros\Addin\FacturacionElectronica\64\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.csproj.ResolveComReference.cache
+T:\Productos y Suministros\Addin\FacturacionElectronica\64\FacturacionElectronica\bin\x64\Debug\FacturacionElectronica.exe
+T:\Productos y Suministros\Addin\FacturacionElectronica\64\FacturacionElectronica\bin\x64\Debug\FacturacionElectronica.pdb
+T:\Productos y Suministros\Addin\FacturacionElectronica\64\FacturacionElectronica\bin\x64\Debug\CrystalDecisions.CrystalReports.Engine.dll
+T:\Productos y Suministros\Addin\FacturacionElectronica\64\FacturacionElectronica\bin\x64\Debug\CrystalDecisions.Shared.dll
+T:\Productos y Suministros\Addin\FacturacionElectronica\64\FacturacionElectronica\bin\x64\Debug\log4net.dll
+T:\Productos y Suministros\Addin\FacturacionElectronica\64\FacturacionElectronica\bin\x64\Debug\stdole.dll
+T:\Productos y Suministros\Addin\FacturacionElectronica\64\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.csprojResolveAssemblyReference.cache
+T:\Productos y Suministros\Addin\FacturacionElectronica\64\FacturacionElectronica\obj\x64\Debug\prodsum.Properties.Resources.resources
+T:\Productos y Suministros\Addin\FacturacionElectronica\64\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.csproj.GenerateResource.Cache
+T:\Productos y Suministros\Addin\FacturacionElectronica\64\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.exe
+T:\Productos y Suministros\Addin\FacturacionElectronica\64\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.pdb
+T:\Productos y Suministros\Addin\FacturacionElectronica\64\FacturacionElectronica\bin\x64\Debug\B1Framework.dll
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica V2\FacturacionElectronica\bin\x64\Debug\FacturacionElectronica.exe.config
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica V2\FacturacionElectronica\obj\x64\Debug\Interop.SAPbobsCOM.dll
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica V2\FacturacionElectronica\obj\x64\Debug\Interop.SAPbouiCOM.dll
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica V2\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.csproj.ResolveComReference.cache
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica V2\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.exe
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica V2\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.pdb
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica V2\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.csprojResolveAssemblyReference.cache
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica V2\FacturacionElectronica\obj\x64\Debug\prodsum.Properties.Resources.resources
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica V2\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.csproj.GenerateResource.Cache
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica V2\FacturacionElectronica\bin\x64\Debug\FacturacionElectronica.exe
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica V2\FacturacionElectronica\bin\x64\Debug\FacturacionElectronica.pdb
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica V2\FacturacionElectronica\bin\x64\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica V2\FacturacionElectronica\bin\x64\Debug\CrystalDecisions.Shared.dll
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica V2\FacturacionElectronica\bin\x64\Debug\log4net.dll
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica V2\FacturacionElectronica\bin\x64\Debug\stdole.dll
+J:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\bin\x64\Debug\FacturacionElectronica.exe.config
+J:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\bin\x64\Debug\FacturacionElectronica.exe
+J:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\bin\x64\Debug\FacturacionElectronica.pdb
+J:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\bin\x64\Debug\CrystalDecisions.CrystalReports.Engine.dll
+J:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\bin\x64\Debug\CrystalDecisions.Shared.dll
+J:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\bin\x64\Debug\log4net.dll
+J:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\bin\x64\Debug\stdole.dll
+J:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.csprojAssemblyReference.cache
+J:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\obj\x64\Debug\Interop.SAPbobsCOM.dll
+J:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\obj\x64\Debug\Interop.SAPbouiCOM.dll
+J:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.csproj.ResolveComReference.cache
+J:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\obj\x64\Debug\prodsum.Properties.Resources.resources
+J:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.csproj.GenerateResource.cache
+J:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.csproj.CoreCompileInputs.cache
+J:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.csproj.CopyComplete
+J:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.exe
+J:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.pdb
+T:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\bin\x64\Debug\FacturacionElectronica.exe.config
+T:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\obj\x64\Debug\Interop.SAPbobsCOM.dll
+T:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\obj\x64\Debug\Interop.SAPbouiCOM.dll
+T:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.csproj.ResolveComReference.cache
+T:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.exe
+T:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.pdb
+T:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\bin\x64\Debug\FacturacionElectronica.exe
+T:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\bin\x64\Debug\FacturacionElectronica.pdb
+T:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\bin\x64\Debug\CrystalDecisions.CrystalReports.Engine.dll
+T:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\bin\x64\Debug\CrystalDecisions.Shared.dll
+T:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\bin\x64\Debug\log4net.dll
+T:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\bin\x64\Debug\stdole.dll
+T:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.csprojResolveAssemblyReference.cache
+T:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\obj\x64\Debug\prodsum.Properties.Resources.resources
+T:\Productos y Suministros\Facturacion Electronica\Facturacion Electronica V3\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.csproj.GenerateResource.Cache
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica Soilmec\FacturacionElectronica\bin\x64\Debug\FacturacionElectronica.exe.config
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica Soilmec\FacturacionElectronica\obj\x64\Debug\Interop.SAPbobsCOM.dll
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica Soilmec\FacturacionElectronica\obj\x64\Debug\Interop.SAPbouiCOM.dll
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica Soilmec\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.csproj.ResolveComReference.cache
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica Soilmec\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.exe
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica Soilmec\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.pdb
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica Soilmec\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.csprojResolveAssemblyReference.cache
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica Soilmec\FacturacionElectronica\obj\x64\Debug\soilmec.Properties.Resources.resources
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica Soilmec\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.csproj.GenerateResource.Cache
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica Soilmec\FacturacionElectronica\bin\x64\Debug\FacturacionElectronica.exe
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica Soilmec\FacturacionElectronica\bin\x64\Debug\FacturacionElectronica.pdb
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica Soilmec\FacturacionElectronica\bin\x64\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica Soilmec\FacturacionElectronica\bin\x64\Debug\CrystalDecisions.Shared.dll
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica Soilmec\FacturacionElectronica\bin\x64\Debug\log4net.dll
+C:\Users\c02vc0vrj1wk\Desktop\Facturacion Electronica Soilmec\FacturacionElectronica\bin\x64\Debug\stdole.dll
+O:\Proyectos SAP Personales\Soilmec\Facturacion Electronica Soilmec\FacturacionElectronica\bin\x64\Debug\FacturacionElectronica.exe.config
+O:\Proyectos SAP Personales\Soilmec\Facturacion Electronica Soilmec\FacturacionElectronica\obj\x64\Debug\Interop.SAPbobsCOM.dll
+O:\Proyectos SAP Personales\Soilmec\Facturacion Electronica Soilmec\FacturacionElectronica\obj\x64\Debug\Interop.SAPbouiCOM.dll
+O:\Proyectos SAP Personales\Soilmec\Facturacion Electronica Soilmec\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.csproj.ResolveComReference.cache
+O:\Proyectos SAP Personales\Soilmec\Facturacion Electronica Soilmec\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.exe
+O:\Proyectos SAP Personales\Soilmec\Facturacion Electronica Soilmec\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.pdb
+O:\Proyectos SAP Personales\Soilmec\Facturacion Electronica Soilmec 32 bits\FacturacionElectronica\bin\x64\Debug\FacturacionElectronica.exe.config
+O:\Proyectos SAP Personales\Soilmec\Facturacion Electronica Soilmec 32 bits\FacturacionElectronica\obj\x64\Debug\Interop.SAPbobsCOM.dll
+O:\Proyectos SAP Personales\Soilmec\Facturacion Electronica Soilmec 32 bits\FacturacionElectronica\obj\x64\Debug\Interop.SAPbouiCOM.dll
+O:\Proyectos SAP Personales\Soilmec\Facturacion Electronica Soilmec 32 bits\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.csproj.ResolveComReference.cache
+O:\Proyectos SAP Personales\Soilmec\Facturacion Electronica Soilmec 32 bits\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.exe
+O:\Proyectos SAP Personales\Soilmec\Facturacion Electronica Soilmec 32 bits\FacturacionElectronica\obj\x64\Debug\FacturacionElectronica.pdb

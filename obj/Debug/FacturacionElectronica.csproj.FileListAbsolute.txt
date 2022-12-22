@@ -1,0 +1,4 @@
+T:\Productos y Suministros\Program Files (x86)\SAP\SAP Business One Server\B1_SHR\PYS_Resources\dll\FacturacionElectronica.exe.config
+T:\Productos y Suministros\Addin\FacturacionElectronica\64\FacturacionElectronica\obj\Debug\Interop.SAPbobsCOM.dll
+T:\Productos y Suministros\Addin\FacturacionElectronica\64\FacturacionElectronica\obj\Debug\Interop.SAPbouiCOM.dll
+T:\Productos y Suministros\Addin\FacturacionElectronica\64\FacturacionElectronica\obj\Debug\FacturacionElectronica.csproj.ResolveComReference.cache

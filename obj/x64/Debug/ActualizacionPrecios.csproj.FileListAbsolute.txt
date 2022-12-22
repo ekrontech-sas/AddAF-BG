@@ -1,0 +1,16 @@
+J:\Productos y Suministros\Addin\ActualizacionPrecios\64\ActualizacionPrecios_64_06-10-2018\bin\x64\Debug\ActualizacionPrecios.dll.config
+J:\Productos y Suministros\Addin\ActualizacionPrecios\64\ActualizacionPrecios_64_06-10-2018\bin\x64\Debug\ActualizacionPrecios.dll
+J:\Productos y Suministros\Addin\ActualizacionPrecios\64\ActualizacionPrecios_64_06-10-2018\bin\x64\Debug\ActualizacionPrecios.pdb
+J:\Productos y Suministros\Addin\ActualizacionPrecios\64\ActualizacionPrecios_64_06-10-2018\bin\x64\Debug\CrystalDecisions.CrystalReports.Engine.dll
+J:\Productos y Suministros\Addin\ActualizacionPrecios\64\ActualizacionPrecios_64_06-10-2018\bin\x64\Debug\CrystalDecisions.Shared.dll
+J:\Productos y Suministros\Addin\ActualizacionPrecios\64\ActualizacionPrecios_64_06-10-2018\bin\x64\Debug\log4net.dll
+J:\Productos y Suministros\Addin\ActualizacionPrecios\64\ActualizacionPrecios_64_06-10-2018\bin\x64\Debug\stdole.dll
+J:\Productos y Suministros\Addin\ActualizacionPrecios\64\ActualizacionPrecios_64_06-10-2018\obj\x64\Debug\Interop.SAPbobsCOM.dll
+J:\Productos y Suministros\Addin\ActualizacionPrecios\64\ActualizacionPrecios_64_06-10-2018\obj\x64\Debug\Interop.SAPbouiCOM.dll
+J:\Productos y Suministros\Addin\ActualizacionPrecios\64\ActualizacionPrecios_64_06-10-2018\obj\x64\Debug\ActualizacionPrecios.csproj.ResolveComReference.cache
+J:\Productos y Suministros\Addin\ActualizacionPrecios\64\ActualizacionPrecios_64_06-10-2018\obj\x64\Debug\prodsum.Properties.Resources.resources
+J:\Productos y Suministros\Addin\ActualizacionPrecios\64\ActualizacionPrecios_64_06-10-2018\obj\x64\Debug\ActualizacionPrecios.csproj.GenerateResource.cache
+J:\Productos y Suministros\Addin\ActualizacionPrecios\64\ActualizacionPrecios_64_06-10-2018\obj\x64\Debug\ActualizacionPrecios.csproj.CoreCompileInputs.cache
+J:\Productos y Suministros\Addin\ActualizacionPrecios\64\ActualizacionPrecios_64_06-10-2018\obj\x64\Debug\ActualizacionPrecios.csproj.CopyComplete
+J:\Productos y Suministros\Addin\ActualizacionPrecios\64\ActualizacionPrecios_64_06-10-2018\obj\x64\Debug\ActualizacionPrecios.dll
+J:\Productos y Suministros\Addin\ActualizacionPrecios\64\ActualizacionPrecios_64_06-10-2018\obj\x64\Debug\ActualizacionPrecios.pdb

@@ -1,0 +1,5 @@
+﻿SELECT 
+	"U_BGT_VERITEM" AS "Type" 
+FROM "@BGT_OPAR" 
+WHERE 
+	"Code" = 'INIT_VAL'

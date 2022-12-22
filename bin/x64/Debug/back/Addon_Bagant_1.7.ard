@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AddOnRegData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SlientInstallation="No" SlientUpgrade="No" Partnernmsp="1.7" SchemaVersion="" Type="" MultipleVersion="false" OnDemand="" OnPremise="" ExtName="Addon_Bagant_EK" ExtVersion="1.7" Contdata="" Partner="MaoSystem" DBType="Both" ClientType="A">
+  <Validity>
+    <SBOCompatibility>
+      <Version From="" To="" />
+    </SBOCompatibility>
+  </Validity>
+  <Configuration>
+    <Repository />
+    <Deployment>
+      <Properties />
+    </Deployment>
+    <Assignment>
+      <Properties />
+    </Assignment>
+  </Configuration>
+  <Addons>
+    <Addon Name="" Group="" ForceFlag="" Visible="" AutoAssign="" SelfUpgrd="">
+      <x86 AddonExe="" AddonSig="">
+        <Installation>
+          <Files />
+        </Installation>
+        <Uninstallation>
+          <Files />
+        </Uninstallation>
+      </x86>
+      <x64 AddonExe="RentalAfAddon.exe" AddonSig="">
+        <Installation>
+          <Files>
+            <File FileName="X64Client\B1Framework.dll">
+              <Actions />
+            </File>
+            <File FileName="X64Client\log4net.dll">
+              <Actions />
+            </File>
+            <File FileName="X64Client\RentalAfAddon.exe">
+              <Actions />
+            </File>
+            <File FileName="X64Client\RentalAfAddon.exe.config">
+              <Actions />
+            </File>
+            <File FileName="X64Client\RentalAfAddon.pdb">
+              <Actions />
+            </File>
+            <File FileName="X64Client\stdole.dll">
+              <Actions />
+            </File>
+          </Files>
+        </Installation>
+        <Uninstallation>
+          <Files>
+            <File FileName="X64Client\B1Framework.dll">
+              <Actions />
+            </File>
+            <File FileName="X64Client\log4net.dll">
+              <Actions />
+            </File>
+            <File FileName="X64Client\RentalAfAddon.exe">
+              <Actions />
+            </File>
+            <File FileName="X64Client\RentalAfAddon.exe.config">
+              <Actions />
+            </File>
+            <File FileName="X64Client\RentalAfAddon.pdb">
+              <Actions />
+            </File>
+            <File FileName="X64Client\stdole.dll">
+              <Actions />
+            </File>
+          </Files>
+        </Uninstallation>
+      </x64>
+    </Addon>
+  </Addons>
+  <XApps>
+    <XApp Name="" Path="" FileName="" />
+  </XApps>
+  <UDQs>
+    <UDQ udqname="">
+      <Hana FileName="" />
+    </UDQ>
+  </UDQs>
+</AddOnRegData>

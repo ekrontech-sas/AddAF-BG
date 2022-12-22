@@ -1,0 +1,12 @@
+C:\Program Files (x86)\SAP\SAP Business One Server\B1_SHR\PYS_Resources\dll\RentalAfAddon.dll.config
+C:\Program Files (x86)\SAP\SAP Business One Server\B1_SHR\PYS_Resources\dll\RentalAfAddon.dll
+C:\Program Files (x86)\SAP\SAP Business One Server\B1_SHR\PYS_Resources\dll\RentalAfAddon.pdb
+C:\Bagant_Alquiler_Activos_Fijos\Addin\obj\Debug\Interop.SAPbobsCOM.dll
+C:\Bagant_Alquiler_Activos_Fijos\Addin\obj\Debug\Interop.SAPbouiCOM.dll
+C:\Bagant_Alquiler_Activos_Fijos\Addin\obj\Debug\RentalAfAddon.csproj.ResolveComReference.cache
+C:\Bagant_Alquiler_Activos_Fijos\Addin\obj\Debug\bagant.Properties.Resources.resources
+C:\Bagant_Alquiler_Activos_Fijos\Addin\obj\Debug\RentalAfAddon.csproj.GenerateResource.cache
+C:\Bagant_Alquiler_Activos_Fijos\Addin\obj\Debug\RentalAfAddon.csproj.CoreCompileInputs.cache
+C:\Bagant_Alquiler_Activos_Fijos\Addin\obj\Debug\RentalAfAddon.csproj.CopyComplete
+C:\Bagant_Alquiler_Activos_Fijos\Addin\obj\Debug\RentalAfAddon.dll
+C:\Bagant_Alquiler_Activos_Fijos\Addin\obj\Debug\RentalAfAddon.pdb

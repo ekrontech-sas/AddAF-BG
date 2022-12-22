@@ -1,0 +1,169 @@
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto\Produccion\obj\Debug\EnvioCorreo.csprojResolveAssemblyReference.cache
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto\Produccion\obj\Debug\Interop.SAPbobsCOM.dll
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto\Produccion\obj\Debug\Interop.SAPbouiCOM.dll
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto\Produccion\obj\Debug\EnvioCorreo.csproj.ResolveComReference.cache
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto\Produccion\obj\Debug\seidor.Properties.Resources.resources
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto\Produccion\obj\Debug\EnvioCorreo.csproj.GenerateResource.Cache
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto\Base\bin\Debug\dll\EnvioCorreo.dll.config
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto\Base\bin\Debug\dll\EnvioCorreo.dll
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto\Base\bin\Debug\dll\EnvioCorreo.pdb
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto\Produccion\obj\Debug\EnvioCorreo.dll
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto\Produccion\obj\Debug\EnvioCorreo.pdb
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Proyecto\Produccion\obj\Debug\EnvioCorreo.csprojResolveAssemblyReference.cache
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Proyecto\Produccion\obj\Debug\Interop.SAPbobsCOM.dll
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Proyecto\Produccion\obj\Debug\Interop.SAPbouiCOM.dll
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Proyecto\Produccion\obj\Debug\EnvioCorreo.csproj.ResolveComReference.cache
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Proyecto\Produccion\obj\Debug\seidor.Properties.Resources.resources
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Proyecto\Produccion\obj\Debug\EnvioCorreo.csproj.GenerateResource.Cache
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Proyecto\Produccion\obj\Debug\EnvioCorreo.dll
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Proyecto\Produccion\obj\Debug\EnvioCorreo.pdb
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Proyecto\Base\bin\Debug\dll\EnvioCorreo.dll.config
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Proyecto\Base\bin\Debug\dll\EnvioCorreo.dll
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Proyecto\Base\bin\Debug\dll\EnvioCorreo.pdb
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Proyecto\EnvioCorreo\obj\Debug\EnvioCorreo.csprojResolveAssemblyReference.cache
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Proyecto\EnvioCorreo\obj\Debug\Interop.SAPbobsCOM.dll
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Proyecto\EnvioCorreo\obj\Debug\Interop.SAPbouiCOM.dll
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Proyecto\EnvioCorreo\obj\Debug\EnvioCorreo.csproj.ResolveComReference.cache
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Proyecto\EnvioCorreo\obj\Debug\seidor.Properties.Resources.resources
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Proyecto\EnvioCorreo\obj\Debug\EnvioCorreo.csproj.GenerateResource.Cache
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Proyecto\EnvioCorreo\obj\Debug\EnvioCorreo.dll
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Proyecto\EnvioCorreo\obj\Debug\EnvioCorreo.pdb
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto\EnvioCorreo\obj\Debug\EnvioCorreo.csprojResolveAssemblyReference.cache
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto\EnvioCorreo\obj\Debug\Interop.SAPbobsCOM.dll
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto\EnvioCorreo\obj\Debug\Interop.SAPbouiCOM.dll
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto\EnvioCorreo\obj\Debug\EnvioCorreo.csproj.ResolveComReference.cache
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto\EnvioCorreo\obj\Debug\seidor.Properties.Resources.resources
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto\EnvioCorreo\obj\Debug\EnvioCorreo.csproj.GenerateResource.Cache
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto\EnvioCorreo\obj\Debug\EnvioCorreo.dll
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto\EnvioCorreo\obj\Debug\EnvioCorreo.pdb
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_32\Base\bin\Debug\dll\EnvioCorreo.dll.config
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_32\Base\bin\Debug\dll\EnvioCorreo.dll
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_32\Base\bin\Debug\dll\EnvioCorreo.pdb
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_32\EnvioCorreo\obj\Debug\EnvioCorreo.csprojResolveAssemblyReference.cache
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_32\EnvioCorreo\obj\Debug\Interop.SAPbobsCOM.dll
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_32\EnvioCorreo\obj\Debug\Interop.SAPbouiCOM.dll
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_32\EnvioCorreo\obj\Debug\EnvioCorreo.csproj.ResolveComReference.cache
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_32\EnvioCorreo\obj\Debug\seidor.Properties.Resources.resources
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_32\EnvioCorreo\obj\Debug\EnvioCorreo.csproj.GenerateResource.Cache
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_32\EnvioCorreo\obj\Debug\EnvioCorreo.dll
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_32\EnvioCorreo\obj\Debug\EnvioCorreo.pdb
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.csprojResolveAssemblyReference.cache
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\seidor.Properties.Resources.resources
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.csproj.GenerateResource.Cache
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.pdb
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.pdb
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (Ultimo)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.pdb
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (Ultimo)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.csprojResolveAssemblyReference.cache
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (Ultimo)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\seidor.Properties.Resources.resources
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (Ultimo)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.csproj.GenerateResource.Cache
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (Ultimo)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.pdb
+C:\Users\Administrator\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.pdb
+C:\Users\Administrator\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\seidor.Properties.Resources.resources
+C:\Users\Administrator\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.pdb
+C:\Users\Administrator\Desktop\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.dll.config
+C:\Users\Administrator\Desktop\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.dll
+C:\Users\Administrator\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.dll
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (Ultimo)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.dll.config
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (Ultimo)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.dll
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (Ultimo)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.dll
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (Ultimo)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.pdb
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (Ultimo)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.csprojResolveAssemblyReference.cache
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (Ultimo)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\seidor.Properties.Resources.resources
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (Ultimo)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.csproj.GenerateResource.Cache
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (Ultimo)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.pdb
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (Ultimo)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.dll.config
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (Ultimo)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.dll
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (Ultimo)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.dll
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (26-02-2018)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.pdb
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (26-02-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\seidor.Properties.Resources.resources
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (26-02-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.csproj.GenerateResource.Cache
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (26-02-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.pdb
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (26-02-2018)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.dll.config
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (26-02-2018)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.dll
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (26-02-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.dll
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (26-02-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.csprojResolveAssemblyReference.cache
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (26-02-2018)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.dll.config
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (26-02-2018)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.dll
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (26-02-2018)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.pdb
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (26-02-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.csprojResolveAssemblyReference.cache
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (26-02-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\seidor.Properties.Resources.resources
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (26-02-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.csproj.GenerateResource.Cache
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (26-02-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.dll
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (26-02-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.pdb
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (12-03-2018)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.dll.config
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (12-03-2018)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.dll
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (12-03-2018)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.pdb
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (12-03-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.csprojResolveAssemblyReference.cache
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (12-03-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\seidor.Properties.Resources.resources
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (12-03-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.csproj.GenerateResource.Cache
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (12-03-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.dll
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (12-03-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.pdb
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (12-03-2018)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.dll.config
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (12-03-2018)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.dll
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (12-03-2018)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.pdb
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (12-03-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.csprojResolveAssemblyReference.cache
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (12-03-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\seidor.Properties.Resources.resources
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (12-03-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.csproj.GenerateResource.Cache
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (12-03-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.dll
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (12-03-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.pdb
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (27-03-2018)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.dll.config
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (27-03-2018)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.dll
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (27-03-2018)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.pdb
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (27-03-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.csprojResolveAssemblyReference.cache
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (27-03-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\seidor.Properties.Resources.resources
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (27-03-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.csproj.GenerateResource.Cache
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (27-03-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.dll
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (27-03-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.pdb
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (27-03-2018)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.dll.config
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (27-03-2018)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.dll
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (27-03-2018)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.pdb
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (27-03-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\seidor.Properties.Resources.resources
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (27-03-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.csproj.GenerateResource.Cache
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (27-03-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.dll
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (27-03-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.pdb
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (27-03-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.csprojResolveAssemblyReference.cache
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (11-04-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\seidor.Properties.Resources.resources
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (11-04-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.csproj.GenerateResource.Cache
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (11-04-2018)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.dll.config
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (11-04-2018)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.dll
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (11-04-2018)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.pdb
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (11-04-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.dll
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (11-04-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.pdb
+C:\Users\c02vc0vrj1wk\Desktop\Envio de Correo (11-04-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.csprojResolveAssemblyReference.cache
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (11-04-2018)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.dll.config
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (11-04-2018)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.dll
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (11-04-2018)\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.pdb
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (11-04-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.csprojResolveAssemblyReference.cache
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (11-04-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\seidor.Properties.Resources.resources
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (11-04-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.csproj.GenerateResource.Cache
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (11-04-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.dll
+P:\Trabajo\Colegio Karl C. Parrish\Desarrollo\Envio de Correo (11-04-2018)\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.pdb
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.exe.config
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\Base\bin\Debug\dll\EnvioCorreo.exe
+C:\Users\c02vc0vrj1wk\Desktop\Proyecto_EnvioCorreo\EnvioCorreo\obj\Debug\EnvioCorreo.exe
+C:\Users\c02vc0vrj1wk\Desktop\BIOTRONITECH\Base\bin\Debug\dll\EnvioCorreo.exe.config
+C:\Users\c02vc0vrj1wk\Desktop\BIOTRONITECH\EnvioCorreo\obj\Debug\EnvioCorreo.exe
+C:\Users\c02vc0vrj1wk\Desktop\BIOTRONITECH\EnvioCorreo\obj\Debug\EnvioCorreo.pdb
+C:\Users\c02vc0vrj1wk\Desktop\BIOTRONITECH\Base\bin\Debug\dll\EnvioCorreo.exe
+C:\Users\c02vc0vrj1wk\Desktop\BIOTRONITECH\Base\bin\Debug\dll\EnvioCorreo.pdb
+C:\Users\c02vc0vrj1wk\Desktop\BIOTRONITECH\EnvioCorreo\obj\Debug\EnvioCorreo.csprojResolveAssemblyReference.cache
+C:\Users\c02vc0vrj1wk\Desktop\BIOTRONITECH\EnvioCorreo\obj\Debug\seidor.Properties.Resources.resources
+C:\Users\c02vc0vrj1wk\Desktop\BIOTRONITECH\EnvioCorreo\obj\Debug\EnvioCorreo.csproj.GenerateResource.Cache
+P:\Biotronitech\Biotronitech Addon\Base\bin\Debug\dll\EnvioCorreo.dll.config
+P:\Biotronitech\Biotronitech Addon\Base\bin\Debug\dll\EnvioCorreo.dll
+P:\Biotronitech\Biotronitech Addon\Base\bin\Debug\dll\EnvioCorreo.pdb
+P:\Biotronitech\Biotronitech Addon\EnvioCorreo\obj\Debug\EnvioCorreo.csprojResolveAssemblyReference.cache
+P:\Biotronitech\Biotronitech Addon\EnvioCorreo\obj\Debug\seidor.Properties.Resources.resources
+P:\Biotronitech\Biotronitech Addon\EnvioCorreo\obj\Debug\EnvioCorreo.csproj.GenerateResource.Cache
+P:\Biotronitech\Biotronitech Addon\EnvioCorreo\obj\Debug\EnvioCorreo.dll
+P:\Biotronitech\Biotronitech Addon\EnvioCorreo\obj\Debug\EnvioCorreo.pdb
+C:\Users\c02vc0vrj1wk\Desktop\Base\bin\Debug\dll\EnvioCorreo.pdb
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo\obj\Debug\EnvioCorreo.csprojResolveAssemblyReference.cache
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo\obj\Debug\seidor.Properties.Resources.resources
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo\obj\Debug\EnvioCorreo.csproj.GenerateResource.Cache
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo\obj\Debug\EnvioCorreo.pdb
+C:\Users\c02vc0vrj1wk\Desktop\Base\bin\Debug\dll\EnvioCorreo.exe.config
+C:\Users\c02vc0vrj1wk\Desktop\EnvioCorreo\obj\Debug\EnvioCorreo.exe
+C:\Users\c02vc0vrj1wk\Desktop\Base\bin\Debug\dll\EnvioCorreo.exe

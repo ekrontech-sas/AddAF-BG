@@ -1,0 +1,11 @@
+D:\OneDrive\Dropbox\Trabajo\Bagant\Addin\obj\x86\Debug\RentalAfAddon.csprojAssemblyReference.cache
+D:\OneDrive\Dropbox\Trabajo\Bagant\Addin\obj\x86\Debug\bagant.Properties.Resources.resources
+D:\OneDrive\Dropbox\Trabajo\Bagant\Addin\obj\x86\Debug\RentalAfAddon.csproj.GenerateResource.cache
+D:\OneDrive\Dropbox\Trabajo\Bagant\Addin\bin\x86\Debug\RentalAfAddon.dll.config
+D:\OneDrive\Dropbox\Trabajo\Bagant\Addin\bin\x86\Debug\RentalAfAddon.dll
+D:\OneDrive\Dropbox\Trabajo\Bagant\Addin\bin\x86\Debug\RentalAfAddon.pdb
+D:\OneDrive\Dropbox\Trabajo\Bagant\Addin\bin\x86\Debug\log4net.dll
+D:\OneDrive\Dropbox\Trabajo\Bagant\Addin\bin\x86\Debug\stdole.dll
+D:\OneDrive\Dropbox\Trabajo\Bagant\Addin\obj\x86\Debug\RentalAfAddon.csproj.CopyComplete
+D:\OneDrive\Dropbox\Trabajo\Bagant\Addin\obj\x86\Debug\RentalAfAddon.dll
+D:\OneDrive\Dropbox\Trabajo\Bagant\Addin\obj\x86\Debug\RentalAfAddon.pdb

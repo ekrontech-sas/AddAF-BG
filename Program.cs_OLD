@@ -1,0 +1,800 @@
+﻿using System;
+using System.Reflection;
+using System.Xml;
+using B1Framework.B1Frame;
+using B1Framework.RecordSet;
+using bagant.Services;
+using SAPbouiCOM;
+
+namespace bagant
+{
+    class Program : B1AddOn
+    {
+        public static class Globals
+        {
+            public static string pFormD { get; set; }
+        }
+
+        public string pFormDN = "";
+        public SAPbouiCOM.Form FormR;
+
+        public void LoadProgram(Assembly asm, string connStr, int appid)
+        {
+            SetAssembly(asm);
+            loadConnection(connStr, appid);
+            loadResources(connStr, appid, asm, "bagant.Menu.xml.addMenus.xml");
+
+            B1Connections.SboApp.SetStatusBarMessage("Addin Rental AF Iniciado", SAPbouiCOM.BoMessageTime.bmt_Medium, false);
+            B1Connections.SboApp.ItemEvent += new SAPbouiCOM._IApplicationEvents_ItemEventEventHandler(SboApp_ItemEvent);
+            B1Connections.SboApp.MenuEvent += new SAPbouiCOM._IApplicationEvents_MenuEventEventHandler(sboApp_MenuItemEvent);
+            //B1Connections.SboApp.FormDataEvent += SboApp_FormDataEvent;
+        }
+
+        //private void SboApp_FormDataEvent(ref SAPbouiCOM.BusinessObjectInfo BusinessObjectInfo, out bool BubbleEvent)
+        //{
+         //   bool pDatoD = true;
+         //   Globals.pFormD = BusinessObjectInfo.FormUID;
+         //   pFormDN = BusinessObjectInfo.FormUID;
+        //    BubbleEvent = pDatoD;
+        //}
+
+        private void sboApp_MenuItemEvent(ref SAPbouiCOM.MenuEvent pVal, out bool BubbleEvent)
+        {
+            var pDatoD = true;
+            var pError = "0";
+            var pNumCto = "";
+            var pErrorDesc = "";
+
+            if (pVal.MenuUID == "RemRowC")
+            {
+                if (Globals.pFormD == "2002122020")
+                {
+                    try
+                    {
+                        var pValorD = FormR.Items.Item("Item_43").Specific;
+                        string pDatoN = pValorD.Value;
+
+                        var pNumCtoD = ((EditText)FormR.Items.Item("Item_45").Specific).Value.ToString();
+                        var pItem = "";
+                        var matrix = (SAPbouiCOM.Matrix)FormR.Items.Item("Item_62").Specific;
+                        int selrow1 = matrix.GetNextSelectedRow(0, SAPbouiCOM.BoOrderType.ot_RowOrder);
+                        if(selrow1 != -1)
+                        {
+                            FormR.Mode = BoFormMode.fm_UPDATE_MODE;
+                            pItem = matrix.Columns.Item(1).Cells.Item(selrow1).Specific.Value;
+                            if (pNumCtoD != "" && pItem != "")
+                            {
+                                var queryContractData = B1Util.Formato(B1Util.GetEmbeddedResource("bagant.Hana.GetMovmentByItemDelRow.sql", GetType().Assembly), pNumCtoD, pItem);
+                                var resp = Record.Instance.Query(queryContractData).Execute().First();
+                                if (resp.Count > 0)
+                                {
+                                    var pDato = resp["Articulo"].ToString();
+                                    if (pDato == pItem)
+                                    {
+                                        pErrorDesc = "No es posible Eliminar partidas porque se tienen articulos asignados en el Contrato..!!";
+                                        B1Connections.SboApp.SetStatusBarMessage(pErrorDesc, BoMessageTime.bmt_Medium);
+                                        pDatoD = false;
+                                    }
+                                    else
+                                    {
+                                        //matrix.AddRow();
+                                        FormR.Mode = BoFormMode.fm_UPDATE_MODE;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    catch (System.Exception ex)
+                    {
+                        Log.Info("Excp (SboApp_ItemEvent) => " + ex.Message);
+                        pDatoD = false;
+                    }
+
+
+                }
+            }
+
+            if (pVal.MenuUID == "DuplicarCont")
+            {
+                if (Globals.pFormD == "2002122020")
+                {
+                    pErrorDesc = "Menu..";
+                    try
+                    {
+                        var pUser = B1Connections.SboApp.Company.UserName;
+                        var pNumCtoD = ((EditText)FormR.Items.Item("Item_45").Specific).Value.ToString();
+                        FormR.Mode = BoFormMode.fm_ADD_MODE;
+                        var queryContractData = B1Util.Formato(B1Util.GetEmbeddedResource("bagant.Hana.GetDataContractAll.sql", GetType().Assembly), pNumCtoD, pUser);
+                        var resp = Record.Instance.Query(queryContractData).Execute().First();
+                        var pDato = resp["U_BGT_OrdComp"].ToString();
+
+                        //var queryUser = B1Util.Formato(B1Util.GetEmbeddedResource("bagant.Hana.GetDataContractAll.sql", GetType().Assembly), pNumCtoD);
+                        //var respUser = Record.Instance.Query(queryContractData).Execute().First();
+
+
+                        ((EditText)FormR.Items.Item("Item_8").Specific).Value = pDato;
+                        var matrix = (SAPbouiCOM.Matrix)FormR.Items.Item("Item_62").Specific;
+                        matrix.Clear();
+                        matrix.AddRow();
+                        string pFechaDN = "";
+                        pFechaDN = DateTime.Now.Year.ToString();
+                        if (DateTime.Now.Month.ToString().Length == 2)
+                        {
+                            pFechaDN += DateTime.Now.Month.ToString();
+                        }
+                        else
+                        {
+                            pFechaDN += "0" + DateTime.Now.Month.ToString();
+                        }
+                        if (DateTime.Now.Day.ToString().Length == 2)
+                        {
+                            pFechaDN += DateTime.Now.Day.ToString();
+                        }
+                        else
+                        {
+                            pFechaDN += "0" + DateTime.Now.Day.ToString();
+                        }
+
+                        ((EditText)FormR.Items.Item("Item_14").Specific).Value = pFechaDN;
+
+                        ((EditText)FormR.Items.Item("Item_6").Specific).Value = resp["U_BGT_CardCode"].ToString();
+
+                        ((EditText)FormR.Items.Item("Item_18").Specific).Value = resp["U_BGT_CodHolding"].ToString();
+
+                        SAPbouiCOM.ComboBox oComboBox21 = FormR.Items.Item("Item_21").Specific;
+                        oComboBox21.Select(resp["U_BGT_CntcPerson"].ToString(), SAPbouiCOM.BoSearchKey.psk_ByValue);
+
+                        SAPbouiCOM.ComboBox oComboBox23 = FormR.Items.Item("Item_23").Specific;
+                        oComboBox23.Select(resp["U_BGT_DirecFE"].ToString(), SAPbouiCOM.BoSearchKey.psk_ByValue);
+
+                        SAPbouiCOM.ComboBox oComboBox25 = FormR.Items.Item("Item_25").Specific;
+                        oComboBox25.Select(resp["U_BGT_DestObra"].ToString(), SAPbouiCOM.BoSearchKey.psk_ByValue);
+
+                        SAPbouiCOM.ComboBox oComboBox27 = FormR.Items.Item("Item_27").Specific;
+                        oComboBox27.Select(resp["U_BGT_Territor"].ToString(), SAPbouiCOM.BoSearchKey.psk_ByValue);
+
+                        FormR.Items.Item("Item_78").Enabled = true;
+                        FormR.Items.Item("Item_94").Enabled = true;
+                        FormR.Items.Item("Item_88").Enabled = true;
+                        FormR.Items.Item("Item_108").Enabled = true;
+
+                        SAPbouiCOM.ComboBox oComboBox78 = FormR.Items.Item("Item_78").Specific;
+                        oComboBox78.Select(resp["U_BGT_PriceList"].ToString(), SAPbouiCOM.BoSearchKey.psk_ByValue);
+
+                        SAPbouiCOM.ComboBox oComboBox94 = FormR.Items.Item("Item_94").Specific;
+                        oComboBox94.Select(resp["U_BGT_CodSurc"].ToString(), SAPbouiCOM.BoSearchKey.psk_ByValue);
+
+                        SAPbouiCOM.ComboBox oComboBox98 = FormR.Items.Item("Item_98").Specific;
+                        oComboBox98.Select(resp["U_BGT_PerFact"].ToString(), SAPbouiCOM.BoSearchKey.psk_ByValue);
+
+                        SAPbouiCOM.ComboBox oComboBox88 = FormR.Items.Item("Item_88").Specific;
+                        oComboBox88.Select(resp["U_BGT_TipCalc"].ToString(), SAPbouiCOM.BoSearchKey.psk_ByValue);
+
+                        ((EditText)FormR.Items.Item("Item_108").Specific).Value = resp["U_BGT_CicloFact"].ToString();
+
+                        SAPbouiCOM.ComboBox oComboBox43 = FormR.Items.Item("Item_43").Specific;
+                        oComboBox43.Select(resp["U_BGT_Status"].ToString(), SAPbouiCOM.BoSearchKey.psk_ByValue);
+
+                        ((EditText)FormR.Items.Item("Item_37").Specific).Value = resp["U_BGT_DurCont"].ToString();
+                        ((EditText)FormR.Items.Item("Item_39").Specific).Value = resp["U_BGT_DocNumOF"].ToString();
+
+                        SAPbouiCOM.ComboBox oComboBox47 = FormR.Items.Item("Item_47").Specific;
+                        oComboBox47.Select(resp["U_BGT_DistObra"].ToString(), SAPbouiCOM.BoSearchKey.psk_ByValue);
+
+                        SAPbouiCOM.ComboBox oComboBox79 = FormR.Items.Item("Item_79").Specific;
+                        oComboBox79.Select(resp["U_BGT_Transporte"].ToString(), SAPbouiCOM.BoSearchKey.psk_ByValue);
+
+                        SAPbouiCOM.ComboBox oComboBox57 = FormR.Items.Item("Item_57").Specific;
+                        oComboBox57.Select(resp["Series"].ToString(), SAPbouiCOM.BoSearchKey.psk_ByValue);
+
+                        ((EditText)FormR.Items.Item("Item_51").Specific).Value = resp["U_BGT_NumOport"].ToString();
+                        ((EditText)FormR.Items.Item("Item_55").Specific).Value = resp["U_BGT_ActRel"].ToString();
+
+                        SAPbouiCOM.ComboBox oComboBox84 = FormR.Items.Item("Item_84").Specific;
+                        oComboBox84.Select(resp["U_BGT_Categor"].ToString(), SAPbouiCOM.BoSearchKey.psk_ByValue);
+
+                        ((EditText)FormR.Items.Item("Item_53").Specific).Value = resp["U_BGT_Project"].ToString();
+                        ((EditText)FormR.Items.Item("Item_31").Specific).Value = resp["U_BGT_ProjectName"].ToString();
+                        ((EditText)FormR.Items.Item("Item_95").Specific).Value = resp["U_BGT_NomComis"].ToString();
+                        ((EditText)FormR.Items.Item("Item_41").Specific).Value = resp["U_BGT_SlpName"].ToString();
+                        ((EditText)FormR.Items.Item("Item_33").Specific).Value = resp["OwnerD"].ToString();
+                        ((EditText)FormR.Items.Item("Item_74").Specific).Value = resp["U_BGT_Comments"].ToString();
+                        ((EditText)FormR.Items.Item("Item_65").Specific).Value = resp["U_BGT_ValRepEqOb"].ToString();
+                        ((EditText)FormR.Items.Item("Item_67").Specific).Value = resp["U_BGT_ValRepCont"].ToString();
+                        ((EditText)FormR.Items.Item("Item_69").Specific).Value = resp["U_BGT_ValGarant"].ToString();
+                        ((EditText)FormR.Items.Item("Item_71").Specific).Value = resp["U_BGT_SubPesObra"].ToString();
+                        ((EditText)FormR.Items.Item("Item_73").Specific).Value = resp["U_BGT_SubPesEnt"].ToString();
+                    }
+                    catch (System.Exception ex)
+                    {
+                        Log.Info("Excp (SboApp_ItemEvent) => " + ex.Message);
+                        pDatoD = false;
+                    }
+                    pDatoD = false;
+                }
+            }
+
+            if (pVal.MenuUID == "5907")
+            {
+                if (Globals.pFormD == "140")
+                {
+                    try
+                    {
+                        FormR.Items.Item("U_BGT_FecFact").Enabled = false;
+                        FormR.Items.Item("U_BGT_ContAsoc").Enabled = false;
+                        FormR.Items.Item("U_NUM_GUIA").Enabled = false;
+                        FormR.Items.Item("U_BGT_DevProv").Enabled = false;
+
+                        pNumCto = ((EditText)FormR.Items.Item("U_BGT_ContAsoc").Specific).Value;
+                        var fecFact = ((EditText)FormR.Items.Item("U_BGT_FecFact").Specific).Value;
+
+                        if (string.IsNullOrEmpty(fecFact) || fecFact.Equals("0") || fecFact.Equals("0.0"))
+                        {
+                            pErrorDesc = "No puede dejar el campo de Fecha de Facturacion Vacio.";
+                            pError = "1";
+                        }
+
+
+                        var iNumGuiaD = ((EditText)FormR.Items.Item("U_NUM_GUIA").Specific);
+                        var iNumeroGuia = ((EditText)FormR.Items.Item("U_NUM_GUIA").Specific).Value;
+                        int valor = 0;
+                        if (!int.TryParse(iNumeroGuia.ToString(), out valor))
+                        {
+                            pErrorDesc = "Solo se admite numeros";
+                            iNumGuiaD.Value = "0";
+                            pError = "1";
+                        }
+
+                        if (iNumeroGuia.ToString().Length > 9)
+                        {
+                            pErrorDesc = "Numero de caracteres permitidos 9";
+                            iNumGuiaD.Value = "0";
+                            pError = "1";
+                        }
+                        //else if (iNumeroGuia.ToString().Length > 0 && iNumeroGuia.ToString().Length < 9)
+                        //{
+                        //    iNumGuiaD.Value = iNumeroGuia.ToString().PadLeft(9, '0');
+                        //}
+
+                        var fecEnt = ((EditText)FormR.Items.Item("10").Specific).Value;
+                        var queryContractData = B1Util.Formato(B1Util.GetEmbeddedResource("bagant.Hana.GetContractData.sql", GetType().Assembly), pNumCto);
+                        var resp = Record.Instance.Query(queryContractData).Execute().First();
+                        var pDato = resp["CreateDate"].ToString();
+                        var pFecha = "";
+                        var pFechaD = "";
+                        pFecha = pDato.Substring(6, 2) + "/" + pDato.Substring(4, 2) + "/" + pDato.Substring(0, 4);
+                        pFechaD = fecEnt.Substring(6, 2) + "/" + fecEnt.Substring(4, 2) + "/" + fecEnt.Substring(0, 4);
+                        if (Convert.ToDateTime(pFecha) < Convert.ToDateTime(pFechaD))
+                        {
+                            pErrorDesc = "Error: No puede seleccionar una fecha anterior a la Fecha del Contrato..!! ";
+                            pError = "1";
+                        }
+                        if (pError == "1")
+                        {
+                            B1Connections.SboApp.SetStatusBarMessage(pErrorDesc);
+                            pDatoD = false;
+                        }
+                    }
+                    catch (System.Exception ex)
+                    {
+                        Log.Info("Excp (SboApp_ItemEvent) => " + ex.Message);
+                        pDatoD = false;
+                    }
+
+                }
+            }
+            BubbleEvent = pDatoD;
+        }
+
+        private bool PassValidations(B1Forms Form)
+        {
+            var cntctPerson = (ComboBox)Form.Items.Item("Item_21").Specific;
+            var dirFe = (ComboBox)Form.Items.Item("Item_23").Specific;
+            var destObra = (ComboBox)Form.Items.Item("Item_25").Specific;
+            var territorio = (ComboBox)Form.Items.Item("Item_27").Specific;
+            var listAlq = (ComboBox)Form.Items.Item("Item_78").Specific;
+            var sucursal = (ComboBox)Form.Items.Item("Item_94").Specific;
+            var tipoFact = (ComboBox)Form.Items.Item("Item_98").Specific;
+            var tipCalc = (ComboBox)Form.Items.Item("Item_88").Specific;
+            var ciclFact = (EditText)Form.Items.Item("Item_108").Specific;
+            var distObra = (ComboBox)Form.Items.Item("Item_47").Specific;
+            var trasnporte = (ComboBox)Form.Items.Item("Item_79").Specific;
+            var categoria = (ComboBox)Form.Items.Item("Item_84").Specific;
+            var codigoSN = (EditText)Form.Items.Item("Item_6").Specific;
+            var mesesCont = (EditText)Form.Items.Item("Item_37").Specific;
+            var proyecto = (EditText)Form.Items.Item("Item_53").Specific;
+            var comision = (EditText)Form.Items.Item("Item_95").Specific;
+            var empleado = (EditText)Form.Items.Item("Item_41").Specific;
+            var propietario = (EditText)Form.Items.Item("Item_33").Specific;
+
+            var pDatoRegresa = true;
+            if (cntctPerson.Selected == null)
+            {
+                B1Connections.SboApp.SetStatusBarMessage("Tiene que seleccionar el campo \"Persona de Contacto\".");
+                pDatoRegresa = false;
+            }
+            else
+            {
+                if (dirFe.Selected == null)
+                {
+                    B1Connections.SboApp.SetStatusBarMessage("Tiene que seleccionar el campo \"Direccion FE\".");
+                    pDatoRegresa = false;
+                }
+
+                if (destObra.Selected == null)
+                {
+                    B1Connections.SboApp.SetStatusBarMessage("Tiene que seleccionar el campo \"Destino Obra\".");
+                    pDatoRegresa = false;
+                }
+
+                if (territorio.Selected == null)
+                {
+                    B1Connections.SboApp.SetStatusBarMessage("Tiene que seleccionar el campo \"Territorio\".");
+                    pDatoRegresa = false;
+                }
+
+                if (listAlq.Selected == null)
+                {
+                    B1Connections.SboApp.SetStatusBarMessage("Tiene que seleccionar el campo \"Lista de Alquiler\".");
+                    pDatoRegresa = false;
+                }
+
+                if (sucursal.Selected == null)
+                {
+                    B1Connections.SboApp.SetStatusBarMessage("Tiene que seleccionar el campo \"Sucursal\".");
+                    pDatoRegresa = false;
+                }
+
+                if (tipoFact.Selected == null)
+                {
+                    B1Connections.SboApp.SetStatusBarMessage("Tiene que seleccionar el campo \"Tipo de Facturacion\".");
+                    pDatoRegresa = false;
+                }
+
+                if (tipCalc.Selected == null)
+                {
+                    B1Connections.SboApp.SetStatusBarMessage("Tiene que seleccionar el campo \"Tipo de Calculo\".");
+                    pDatoRegresa = false;
+                }
+
+                if (distObra.Selected == null)
+                {
+                    B1Connections.SboApp.SetStatusBarMessage("Tiene que seleccionar el campo \"Distancia de obra\".");
+                    pDatoRegresa = false;
+                }
+
+                if (trasnporte.Selected == null)
+                {
+                    B1Connections.SboApp.SetStatusBarMessage("Tiene que seleccionar el campo \"Transporte\".");
+                    pDatoRegresa = false;
+                }
+
+                if (categoria.Selected == null)
+                {
+                    B1Connections.SboApp.SetStatusBarMessage("Tiene que seleccionar el campo \"Categoria\".");
+                    pDatoRegresa = false;
+                }
+
+                if (string.IsNullOrEmpty(ciclFact.Value.Trim()))
+                {
+                    B1Connections.SboApp.SetStatusBarMessage("Tiene que seleccionar el campo \"Ciclo de Facturacion\".");
+                    pDatoRegresa = false;
+                }
+
+                if (string.IsNullOrEmpty(codigoSN.Value.Trim()))
+                {
+                    B1Connections.SboApp.SetStatusBarMessage("Tiene que digitar el campo \"Codigo SN\".");
+                    pDatoRegresa = false;
+                }
+
+                if (string.IsNullOrEmpty(mesesCont.Value.Trim()))
+                {
+                    B1Connections.SboApp.SetStatusBarMessage("Tiene que digitar el campo \"Meses duracion contrato\".");
+                    pDatoRegresa = false;
+                }
+
+                if (string.IsNullOrEmpty(proyecto.Value.Trim()))
+                {
+                    B1Connections.SboApp.SetStatusBarMessage("Tiene que digitar el campo \"Codigo de Obra\".");
+                    pDatoRegresa = false;
+                }
+
+                if (string.IsNullOrEmpty(comision.Value.Trim()))
+                {
+                    B1Connections.SboApp.SetStatusBarMessage("Tiene que digitar el campo \"Codigo de Comision\".");
+                    pDatoRegresa = false;
+                }
+
+                if (string.IsNullOrEmpty(empleado.Value.Trim()))
+                {
+                    B1Connections.SboApp.SetStatusBarMessage("Tiene que digitar el campo \"Empleado de Venta\".");
+                    pDatoRegresa = false;
+                }
+
+                if (string.IsNullOrEmpty(propietario.Value.Trim()))
+                {
+                    B1Connections.SboApp.SetStatusBarMessage("Tiene que digitar el campo \"Propietario\".");
+                    pDatoRegresa = false;
+                }
+            }
+            return pDatoRegresa;
+        }
+
+        private void SboApp_ItemEvent(string FormUID, ref SAPbouiCOM.ItemEvent pVal, out bool BubbleEvent)
+        {
+            BubbleEvent = true;
+            SAPbouiCOM.Form oFormD = B1Connections.SboApp.Forms.Item(FormUID);
+            try
+            {
+
+                pFormDN = pVal.FormTypeEx;
+                Globals.pFormD = pVal.FormTypeEx;
+               
+                if(pVal.FormTypeEx == "UDO_FT_BAG_GARANTIAS")
+                {
+                    SAPbouiCOM.Form oForm = B1Connections.SboApp.Forms.Item(FormUID);
+                    if (oForm.Mode == BoFormMode.fm_ADD_MODE && pVal.EventType == SAPbouiCOM.BoEventTypes.et_ITEM_PRESSED && pVal.BeforeAction == true)
+                    {
+                                oForm.Items.Item("0_U_G").Enabled = true;
+                                var matrixData = (SAPbouiCOM.Matrix)oForm.Items.Item("0_U_G").Specific;
+                                matrixData.Columns.Item("C_0_1").Editable = true;
+                                matrixData.Columns.Item("C_0_2").Editable = true;
+                                matrixData.Columns.Item("C_0_3").Editable = true;
+                                matrixData.Columns.Item("C_0_4").Editable = true;
+                                matrixData.Columns.Item("C_0_5").Editable = true;
+                                matrixData.Columns.Item("C_0_6").Editable = true;
+                                matrixData.Columns.Item("C_0_7").Editable = true;
+
+                    }
+                }
+
+                if (pVal.FormTypeEx == "2002122020")
+                {
+
+                    SAPbouiCOM.Form oForm = B1Connections.SboApp.Forms.Item(FormUID);
+                    if (pVal.EventType == SAPbouiCOM.BoEventTypes.et_ITEM_PRESSED && pVal.BeforeAction == false && pVal.ItemUID.Equals("1"))
+                    {
+                        B1Connections.SboApp.Menus.Item("1304").Activate();
+                    }
+
+                    FormR = B1Connections.SboApp.Forms.Item(FormUID);
+                    //if (pVal.ItemUID.Equals("1") && pVal.BeforeAction)
+                    //{
+                    //    if (pVal.EventType == BoEventTypes.et_FORM_DATA_ADD)
+                    //    {
+                    //        if (!new Form._2002122020.Button_1().PassValidations(new B1Forms(pVal.FormUID)))
+                    //            BubbleEvent = false; return;
+                    //    }
+                    //}
+
+                    if (pVal.EventType == SAPbouiCOM.BoEventTypes.et_ITEM_PRESSED && pVal.BeforeAction == false && pVal.ItemUID.Equals("1"))
+                    {
+                        B1Connections.SboApp.Menus.Item("1304").Activate();
+                    }
+
+                    if (pVal.EventType == BoEventTypes.et_FORM_ACTIVATE && pVal.BeforeAction == false)
+                    {
+                        SAPbouiCOM.MenuCreationParams oCreationPackage;
+                        oCreationPackage = B1Connections.SboApp.CreateObject(SAPbouiCOM.BoCreatableObjectType.cot_MenuCreationParams);
+
+                        oCreationPackage.Type = SAPbouiCOM.BoMenuType.mt_STRING;
+                        oCreationPackage.UniqueID = "DuplicarCont";
+                        oCreationPackage.String = "Duplicar";
+                        oCreationPackage.Enabled = true;
+
+                        FormR.Menu.AddEx(oCreationPackage);
+                    }
+                    if (pVal.EventType == BoEventTypes.et_FORM_ACTIVATE & pVal.BeforeAction == true)
+                    {
+                        FormR.Menu.RemoveEx("AlwaysRC");
+                    }
+
+                    if (oForm.Mode == BoFormMode.fm_ADD_MODE && pVal.EventType == SAPbouiCOM.BoEventTypes.et_ITEM_PRESSED && pVal.BeforeAction == true && pVal.ItemUID.Equals("1"))
+                    {
+                        var cntctPerson = (ComboBox)oForm.Items.Item("Item_21").Specific;
+                        var dirFe = (ComboBox)oForm.Items.Item("Item_23").Specific;
+                        var destObra = (ComboBox)oForm.Items.Item("Item_25").Specific;
+                        var territorio = (ComboBox)oForm.Items.Item("Item_27").Specific;
+                        var listAlq = (ComboBox)oForm.Items.Item("Item_78").Specific;
+                        var sucursal = (ComboBox)oForm.Items.Item("Item_94").Specific;
+                        var tipoFact = (ComboBox)oForm.Items.Item("Item_98").Specific;
+                        var tipCalc = (ComboBox)oForm.Items.Item("Item_88").Specific;
+                        var ciclFact = (EditText)oForm.Items.Item("Item_108").Specific;
+                        var distObra = (ComboBox)oForm.Items.Item("Item_47").Specific;
+                        var trasnporte = (ComboBox)oForm.Items.Item("Item_79").Specific;
+                        var categoria = (ComboBox)oForm.Items.Item("Item_84").Specific;
+                        var codigoSN = (EditText)oForm.Items.Item("Item_6").Specific;
+                        var mesesCont = (EditText)oForm.Items.Item("Item_37").Specific;
+                        var proyecto = (EditText)oForm.Items.Item("Item_53").Specific;
+                        var comision = (EditText)oForm.Items.Item("Item_95").Specific;
+                        var empleado = (EditText)oForm.Items.Item("Item_41").Specific;
+                        var propietario = (EditText)oForm.Items.Item("Item_33").Specific;
+
+                        if (cntctPerson.Selected == null)
+                        {
+                            B1Connections.SboApp.SetStatusBarMessage("Tiene que seleccionar el campo \"Persona de Contacto\".");
+                            BubbleEvent = false;
+                        }
+                        else
+                        {
+                            if (dirFe.Selected == null)
+                            {
+                                B1Connections.SboApp.SetStatusBarMessage("Tiene que seleccionar el campo \"Direccion FE\".");
+                                BubbleEvent = false;
+                            }
+
+                            if (destObra.Selected == null)
+                            {
+                                B1Connections.SboApp.SetStatusBarMessage("Tiene que seleccionar el campo \"Destino Obra\".");
+                                BubbleEvent = false;
+                            }
+
+                            if (territorio.Selected == null)
+                            {
+                                B1Connections.SboApp.SetStatusBarMessage("Tiene que seleccionar el campo \"Territorio\".");
+                                BubbleEvent = false;
+                            }
+
+                            if (listAlq.Selected == null)
+                            {
+                                B1Connections.SboApp.SetStatusBarMessage("Tiene que seleccionar el campo \"Lista de Alquiler\".");
+                                BubbleEvent = false;
+                            }
+
+                            if (sucursal.Selected == null)
+                            {
+                                B1Connections.SboApp.SetStatusBarMessage("Tiene que seleccionar el campo \"Sucursal\".");
+                                BubbleEvent = false;
+                            }
+
+                            if (tipoFact.Selected == null)
+                            {
+                                B1Connections.SboApp.SetStatusBarMessage("Tiene que seleccionar el campo \"Tipo de Facturacion\".");
+                                BubbleEvent = false;
+                            }
+
+                            if (tipCalc.Selected == null)
+                            {
+                                B1Connections.SboApp.SetStatusBarMessage("Tiene que seleccionar el campo \"Tipo de Calculo\".");
+                                BubbleEvent = false;
+                            }
+
+                            if (distObra.Selected == null)
+                            {
+                                B1Connections.SboApp.SetStatusBarMessage("Tiene que seleccionar el campo \"Distancia de obra\".");
+                                BubbleEvent = false;
+                            }
+
+                            if (trasnporte.Selected == null)
+                            {
+                                B1Connections.SboApp.SetStatusBarMessage("Tiene que seleccionar el campo \"Transporte\".");
+                                BubbleEvent = false;
+                            }
+
+                            if (categoria.Selected == null)
+                            {
+                                B1Connections.SboApp.SetStatusBarMessage("Tiene que seleccionar el campo \"Categoria\".");
+                                BubbleEvent = false;
+                            }
+
+                            if (string.IsNullOrEmpty(ciclFact.Value.Trim()))
+                            {
+                                B1Connections.SboApp.SetStatusBarMessage("Tiene que seleccionar el campo \"Ciclo de Facturacion\".");
+                                BubbleEvent = false;
+                            }
+
+                            if (string.IsNullOrEmpty(codigoSN.Value.Trim()))
+                            {
+                                B1Connections.SboApp.SetStatusBarMessage("Tiene que digitar el campo \"Codigo SN\".");
+                                BubbleEvent = false;
+                            }
+
+                            if (string.IsNullOrEmpty(mesesCont.Value.Trim()))
+                            {
+                                B1Connections.SboApp.SetStatusBarMessage("Tiene que digitar el campo \"Meses duracion contrato\".");
+                                BubbleEvent = false;
+                            }
+
+                            if (string.IsNullOrEmpty(proyecto.Value.Trim()))
+                            {
+                                B1Connections.SboApp.SetStatusBarMessage("Tiene que digitar el campo \"Codigo de Obra\".");
+                                BubbleEvent = false;
+                            }
+
+                            if (string.IsNullOrEmpty(comision.Value.Trim()))
+                            {
+                                B1Connections.SboApp.SetStatusBarMessage("Tiene que digitar el campo \"Codigo de Comision\".");
+                                BubbleEvent = false;
+                            }
+
+                            if (string.IsNullOrEmpty(empleado.Value.Trim()))
+                            {
+                                B1Connections.SboApp.SetStatusBarMessage("Tiene que digitar el campo \"Empleado de Venta\".");
+                                BubbleEvent = false;
+                            }
+
+                            if (string.IsNullOrEmpty(propietario.Value.Trim()))
+                            {
+                                B1Connections.SboApp.SetStatusBarMessage("Tiene que digitar el campo \"Propietario\".");
+                                BubbleEvent = false;
+                            }
+                        }
+                    }
+                }
+
+                if (pVal.FormTypeEx == "112")
+                {
+                    if (pVal.EventType == SAPbouiCOM.BoEventTypes.et_ITEM_PRESSED && pVal.BeforeAction == true && pVal.ItemUID.Equals("5907"))
+                    {
+                        SAPbouiCOM.Form oForm = B1Connections.SboApp.Forms.Item(FormUID);
+                        oForm.Items.Item("U_BGT_FecFact").Enabled = false;
+                        oForm.Items.Item("U_BGT_ContAsoc").Enabled = false;
+                        oForm.Items.Item("U_NUM_GUIA").Enabled = false;
+                        oForm.Items.Item("U_BGT_DevProv").Enabled = false;
+
+                        var pError = "0";
+                        var pNumCto = "";
+                        var pErrorDesc = "";
+                        pNumCto = ((EditText)oForm.Items.Item("U_BGT_ContAsoc").Specific).Value;
+                        var fecFact = ((EditText)oForm.Items.Item("U_BGT_FecFact").Specific).Value;
+
+                        if (string.IsNullOrEmpty(fecFact) || fecFact.Equals("0") || fecFact.Equals("0.0"))
+                        {
+                            pErrorDesc = "No puede dejar el campo de Fecha de Facturacion Vacio.";
+                            pError = "1";
+                        }
+
+
+                        var iNumGuiaD = ((EditText)oForm.Items.Item("U_NUM_GUIA").Specific);
+                        var iNumeroGuia = ((EditText)oForm.Items.Item("U_NUM_GUIA").Specific).Value;
+                        int valor = 0;
+                        if (!int.TryParse(iNumeroGuia.ToString(), out valor))
+                        {
+                            pErrorDesc = "Solo se admite numeros";
+                            iNumGuiaD.Value = "0";
+                            pError = "1";
+                        }
+
+                        if (iNumeroGuia.ToString().Length > 9)
+                        {
+                            pErrorDesc = "Numero de caracteres permitidos 9";
+                            iNumGuiaD.Value = "0";
+                            pError = "1";
+                        }
+                        //else if (iNumeroGuia.ToString().Length > 0 && iNumeroGuia.ToString().Length < 9)
+                        //{
+                        //    iNumGuiaD.Value = iNumeroGuia.ToString().PadLeft(9, '0');
+                        //}
+
+                        var fecEnt = ((EditText)oForm.Items.Item("10").Specific).Value;
+                        var queryContractData = B1Util.Formato(B1Util.GetEmbeddedResource("bagant.Hana.GetContractData.sql", GetType().Assembly), pNumCto);
+                        var resp = Record.Instance.Query(queryContractData).Execute().First();
+                        var pDato = resp["CreateDate"].ToString();
+                        var pFecha = "";
+                        var pFechaD = "";
+                        pFecha = pDato.Substring(6, 2) + "/" + pDato.Substring(4, 2) + "/" + pDato.Substring(0, 4);
+                        pFechaD = fecEnt.Substring(6, 2) + "/" + fecEnt.Substring(4, 2) + "/" + fecEnt.Substring(0, 4);
+                        if (Convert.ToDateTime(pFecha) < Convert.ToDateTime(pFechaD))
+                        {
+                            pErrorDesc = "Error: No puede seleccionar una fecha anterior a la Fecha del Contrato..!! ";
+                            pError = "1";
+                        }
+                        if (pError == "1")
+                        {
+                            B1Connections.SboApp.SetStatusBarMessage(pErrorDesc);
+                            BubbleEvent = false; return;
+                        }
+
+                    }
+                }
+              
+                if (pVal.FormTypeEx == "133")
+                {
+                    if (pVal.EventType == SAPbouiCOM.BoEventTypes.et_ITEM_PRESSED && pVal.BeforeAction == false)
+                    {
+                        SAPbouiCOM.Form oForm = B1Connections.SboApp.Forms.Item(FormUID);
+                        oForm.Items.Item("U_BGT_ContAsoc").Enabled = false;
+                    }
+                }
+                if (pVal.FormTypeEx == "0")
+                {
+                    if (pVal.EventType == SAPbouiCOM.BoEventTypes.et_ITEM_PRESSED && pVal.BeforeAction == true && pVal.ItemUID.Equals("1"))
+                    {
+                        SAPbouiCOM.Form Form = new B1Forms(pVal.FormUID);
+                        var fecFact = ((EditText)Form.Items.Item("U_BGT_FecFact").Specific).Value;
+                        if (Form.Mode == BoFormMode.fm_ADD_MODE)
+                        {
+                            if (string.IsNullOrEmpty(fecFact) || fecFact.Equals("0") || fecFact.Equals("0.0"))
+                            {
+                                B1Connections.SboApp.SetStatusBarMessage("No puede dejar el campo de Fecha de Facturacion Vacio.");
+                                BubbleEvent = false; return;
+                            }
+                        }
+                    }
+                }
+                if (pVal.FormTypeEx == "140")
+                {
+                    if (pVal.EventType == SAPbouiCOM.BoEventTypes.et_ITEM_PRESSED && pVal.BeforeAction == false && pVal.ItemUID.Equals("57"))
+                    {
+                        SAPbouiCOM.Form oForm = B1Connections.SboApp.Forms.Item(FormUID);
+                        oForm.Items.Item("U_BGT_FecFact").Enabled = false;
+                        oForm.Items.Item("U_BGT_ContAsoc").Enabled = false;
+                        oForm.Items.Item("U_NUM_GUIA").Enabled = false;
+                        oForm.Items.Item("U_BGT_DevProv").Enabled = false;
+                    }
+                    if (pVal.EventType == SAPbouiCOM.BoEventTypes.et_ITEM_PRESSED && pVal.BeforeAction == true && pVal.ItemUID.Equals("1"))
+                    {
+                        SAPbouiCOM.Form Form = new B1Forms(pVal.FormUID);
+                        var fecFact = ((EditText)Form.Items.Item("U_BGT_FecFact").Specific).Value;
+                        if (Form.Mode == BoFormMode.fm_ADD_MODE)
+                        {
+                            if (string.IsNullOrEmpty(fecFact) || fecFact.Equals("0") || fecFact.Equals("0.0"))
+                            {
+                                B1Connections.SboApp.SetStatusBarMessage("No puede dejar el campo de Fecha de Facturacion Vacio.");
+                                BubbleEvent = false; return;
+                            }
+                        }
+                    }
+
+                    //if (pVal.EventType == SAPbouiCOM.BoEventTypes.et_ITEM_PRESSED && pVal.BeforeAction == false && pVal.ItemUID.Equals("1"))
+                    //{
+                    //    SAPbouiCOM.Form Form = new B1Forms(pVal.FormUID);
+                    //    if (pVal.ActionSuccess)
+                    //    {
+                    //        var xml = new XmlDocument();
+                    //        xml.LoadXml(pVal.ObjectKey);
+
+                    //        var sapServ = new SAPServices();
+
+                    //        if (pVal.Type == "15")
+                    //        {
+                    //            sapServ.AddMovementData(xml.InnerText, "ODLN", "DLN1", "15");
+                    //            sapServ.CheckUDOContract(xml.InnerText, "ODLN", "15");
+                    //        }
+                    //        else if (pVal.Type == "112")
+                    //        {
+                    //            sapServ.AddMovementData(xml.InnerText, "ODRF", "DRF1", "112");
+                    //            sapServ.CheckUDOContract(xml.InnerText, "ODRF", "112");
+                    //        }
+
+                    //        return;
+                    //    }
+                    //}
+
+                }
+                if (pVal.FormTypeEx == "180")
+                {
+                    if (pVal.EventType == SAPbouiCOM.BoEventTypes.et_ITEM_PRESSED && pVal.BeforeAction == false)
+                    {
+                        SAPbouiCOM.Form oForm = B1Connections.SboApp.Forms.Item(FormUID);
+                        oForm.Items.Item("U_BGT_FecFact").Enabled = false;
+                        oForm.Items.Item("U_BGT_ContAsoc").Enabled = false;
+                        oForm.Items.Item("U_NUM_GUIA").Enabled = false;
+                        oForm.Items.Item("U_BGT_DevProv").Enabled = false;
+                    }
+                }
+
+                if (pVal.FormTypeEx == "2004012021" && !pVal.BeforeAction && pVal.EventType == SAPbouiCOM.BoEventTypes.et_ITEM_PRESSED && pVal.ItemUID == "Item_5" && pVal.ColUID == "Opt")
+                {
+                    SAPbouiCOM.Form oForm = B1Connections.SboApp.Forms.Item(FormUID);
+                    var oGrid = (Grid)oForm.Items.Item("Item_5").Specific;
+                    int newColor = oGrid.DataTable.GetValue("Opt", oGrid.GetDataTableRowIndex(pVal.Row)).ToString() == "Y" ? 0 : 8421504; //8421504 Colors are given as integer, 
+                    oGrid.CommonSetting.SetRowFontColor(pVal.Row + 1, newColor);//row numbering in commonsettings is different
+                }
+
+                if (pVal.FormTypeEx == "2010012021" && !pVal.BeforeAction && pVal.EventType == SAPbouiCOM.BoEventTypes.et_ITEM_PRESSED && pVal.ItemUID == "Item_35" && pVal.ColUID == "Opt")
+                {
+                    SAPbouiCOM.Form oForm = B1Connections.SboApp.Forms.Item(FormUID);
+                    var oGrid = (Grid)oForm.Items.Item("Item_35").Specific;
+                    int newColor = oGrid.DataTable.GetValue("Opt", oGrid.GetDataTableRowIndex(pVal.Row)).ToString() == "Y" ? 0 : 8421504; //8421504 Colors are given as integer, 
+                    oGrid.CommonSetting.SetRowFontColor(pVal.Row + 1, newColor);//row numbering in commonsettings is different
+                }
+
+            }
+            catch (System.Exception ex)
+            {
+                Log.Info("Excp (SboApp_ItemEvent) => " + ex.Message);
+            }
+        }
+    }
+}
